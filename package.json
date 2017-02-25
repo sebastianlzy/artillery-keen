@@ -1,0 +1,17 @@
+{
+  "name": "y",
+  "version": "0.0.1",
+  "description": "To save artillery json file into Keen.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "send": "node index.js",
+    "fire": "artillery quick --duration 60 --rate 10 -n 20 -o report.json http://consumer.app.sg:8888/healthcheck"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "keen-js": "^3.4.1"
+  }
+}
